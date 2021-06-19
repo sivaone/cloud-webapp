@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Cloud Web-App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" media="all"
+          th:href="@{/bootstrap/css/bootstrap.min.css}"/>
+    <script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="container border">
+        <div class="d-flex flex-row justify-content-center">
+            <img src="https://picsum.photos/500" alt="Random Image"/>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <h1 th:text="#{welcome.message}"></h1>
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>
